@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+export const BASE_URL =
+  "https://tiktik-1.vercel.app/" ||
+  "https://tiktik-1.netlify.app" ||
+  "https://tiktik-fj6bhi4xe-better-futures.vercel.app/";
 
 export const createOrGetUser = async (response: any, addUser: any) => {
   var base64Url = response.credential.split('.')[1];
